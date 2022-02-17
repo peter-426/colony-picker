@@ -1,3 +1,3 @@
 # colony-picker
 
-<img src=./colony-picker.png width=600 >
+<img src=https://colony-picker.png width=600 >
