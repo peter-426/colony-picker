@@ -3,5 +3,5 @@
 <a href=https://www.youtube.com/channel/UCkWYMoMaR-2BUtU9O6clCAA > YouTube </a><br>
 
 <img src=https://github.com/peter-426/colony-picker/blob/main/results/colony-picker.png  width=600 >
-<br>
+
 The colony picker uses deep learning to detect and classify yeast colonies, then sends their coordinates to the OT-2 robot.
