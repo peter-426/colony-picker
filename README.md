@@ -1,5 +1,6 @@
 ## Colony picker extension for the Opentrons OT-2 liquid handling robot
 
+<a href=https://www.youtube.com/channel/UCkWYMoMaR-2BUtU9O6clCAA > YouTube </a><br>
 
 <img src=https://github.com/peter-426/colony-picker/blob/main/results/colony-picker.png  width=600 >
 <br>
