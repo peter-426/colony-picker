@@ -1,7 +1,7 @@
 ## Results from a preliminary test run
 
 #### EfficientDet D1 Lite model was tested on various images, some not from the main data set.<br>
-The main thing to notice from this preliminary test run is that after some training the deep learning model ignored the background and detected colonies even when the image is not very simlilar to the images in the main data set (the data set that was split into train/validation/test sets). The underlying assumption is that training and unseen test set images are from the same distibution. However, it is expected that prediction accuracy will decrease to the extent that test set images are from a dissimilar distribution. Precited were filtered by Threshold T. 
+The main thing to notice from this preliminary test run is that after some training the deep learning model ignored the background and detected colonies even when the image is not very simlilar to the images in the main data set (the data set that was split into train/validation/test sets). The underlying assumption is that training and unseen test set images are from the same distibution. However, it is expected that prediction accuracy will decrease to the extent that test set images are from a dissimilar distribution. Predictions were filtered by Threshold T. 
 <table border=5  >
 <tr>
 <td><img src=car-test.jpg  width=500 >  <br> four orange colonies </td>
