@@ -19,5 +19,5 @@ The main thing to notice from this preliminary test run is that after some train
 <td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/434-thresh=0.10.png  width=500 > </td>	
 <tr>
 <td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/carotene-01-600-600.jpg  width=500 > </td>	
-<td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/carotene-01-600-600-thresh=0.20.png  width=500 > </td>	
+<td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/carotene-01-600-600-thresh=0.25.png  width=500 > </td>	
 </table>
