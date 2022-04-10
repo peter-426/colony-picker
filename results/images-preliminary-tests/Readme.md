@@ -1,4 +1,4 @@
-## Results from some old test
+## Results from a preliminary test run
 
 #### EfficientDet D1 Lite model was tested on various images, some not from the main data set.<br>
 The main thing to notice from this preliminary test run is that after some training the deep learning model ignored the background and detected colonies even when the image is not very simlilar to the images in the main data set (the data set that was split into train/validation/test sets).
@@ -19,5 +19,5 @@ The main thing to notice from this preliminary test run is that after some train
 <td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/434-thresh=0.10.png  width=500 > </td>	
 <tr>
 <td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/carotene-01-600-600.jpg  width=500 > </td>	
-<td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/carotene-01-600-600-thresh=0.30.png  width=500 > </td>	
+<td><img src=https://github.com/peter-426/colony-picker/blob/main/results/images-preliminary-tests/carotene-01-600-600-thresh=0.20.png  width=500 > </td>	
 </table>
