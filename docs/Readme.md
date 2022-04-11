@@ -14,7 +14,7 @@ Try various training parameters and test.
 
 ## Data preprocessing:
 
-Images were taken with a Raspeberrry Pi camera, 1600x1600 pixels, must take 
+Images were taken with a Raspberry Pi camera, 1600x1600 pixels, must take 
 square pics. TensorFlow Lite reduces images to small a small size, e.g. 320x320, 
 before doing detection and classification.
 
@@ -26,10 +26,12 @@ as examples.
 
 The folder data-set-maker/ contains 4 python scripts.
 
-01_rotate_images.py 
-02_label_to_csv.py
-03_rotate_boxes.py
-04_norm_coords_and_format.pl
+<list>
+<li> 01_rotate_images.py </li>
+<li> 02_label_to_csv.py </li>
+<li> 03_rotate_boxes.py </li>
+<li> 04_norm_coords_and_format.pl </li>
+</list>
 
 Final result is train_labels-normed.csv.
 
@@ -43,7 +45,7 @@ and tflite format.
 
 However, although this TensorFlow API is convenient, it does not provide much 
 control. It may be worth considering PyTorch and other models for some 
-applications.
+applications, e.g. if deployed onto on a laptop.
 
 ## Testing a model:
 
