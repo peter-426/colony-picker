@@ -47,9 +47,10 @@ applications.
 
 ## Testing a model:
 
-test-model_maker_object_detection_tflite_yeast.ipynb uses a trained model
-to detect and classify objects of interest, e.g orange carotene yeast colonies
-and white colonies.
+test-model_maker_object_detection_tflite_yeast.ipynb 
+
+This notebook uses a trained model to detect and classify objects of interest, 
+e.g orange carotene yeast colonies and white yeast colonies.
 
 
 
