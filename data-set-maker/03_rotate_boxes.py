@@ -71,12 +71,12 @@ def rot_row(line, rot_ext, angle):
       max_y=new_max_pt.y
      
     ##########################################################################
-    ## Here, the bounding box is define ny it's upper left and lower left
-    ## coordinate where pt (0,0) is the upper left corner of an image.
+    ## Here, the bounding box is define by it's upper left and lower left
+    ## coordinates where point (0,0) is the upper left corner of an image.
     #
-    ## Rotation will change the relative coocrdinates, e.g.after rotating a 
+    ## Rotation will change the relative coordinates, e.g. after rotating a 
     ## bounding box 180 degrees, xmin will be greater than xmax. 
-    ####### min_x should be less that max_x, same for min_y versus max_y 
+    ####### min_x should be less that max_x, same for min_y versus max_y. 
     ##########################################################################
     if min_x > max_x:
         temp = max_x
