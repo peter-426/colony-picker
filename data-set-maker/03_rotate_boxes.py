@@ -71,7 +71,7 @@ def rot_row(line, rot_ext, angle):
       max_y=new_max_pt.y
      
     ##########################################################################
-    ## Here, the bounding box is define by it's upper left and lower left
+    ## Here, the bounding box is defined by it's upper left and lower left
     ## coordinates where point (0,0) is the upper left corner of an image.
     #
     ## Rotation will change the relative coordinates, e.g. after rotating a 
@@ -123,7 +123,7 @@ with open(data_set + filename, "r") as f:
         line = f.readline()
         
         
-# Uncomment!        
+###################################################       
 f2= open(data_set + filename_rot, "w") 
 f2.writelines(new_lines)
 f2.close()
