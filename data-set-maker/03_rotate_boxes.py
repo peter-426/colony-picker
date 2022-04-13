@@ -28,7 +28,7 @@ def rot_row(line, rot_ext, angle):
     fields = line.split(",")
             
     rot_name=fields[0].replace(".jpg", rot_ext)
-    print(line, end="")
+    #print(line, end="")
     
     xmin=int(fields[4]); ymin=int(fields[5])
     xmax=int(fields[6]); ymax=int(fields[7])
@@ -54,9 +54,9 @@ def rot_row(line, rot_ext, angle):
       new_max_pt.x= 1600-ymax
       new_max_pt.y= xmax
       
-      min_x = 1600- new_min_pt.y
+      min_x = 1600-new_min_pt.y
       min_y= new_min_pt.x
-      max_x= 1600- new_max_pt.y
+      max_x= 1600-new_max_pt.y
       max_y=  new_max_pt.x
       
     if angle == 270:
@@ -69,8 +69,27 @@ def rot_row(line, rot_ext, angle):
       min_y=new_min_pt.y
       max_x=new_max_pt.x
       max_y=new_max_pt.y
+     
+    ##########################################################################
+    ## Here, the bounding box is define ny it's upper left and lower left
+    ## coordinate where pt (0,0) is the upper left corner of an image.
+    #
+    ## Rotation will change the relative coocrdinates, e.g.after rotating a 
+    ## bounding box 180 degrees, xmin will be greater than xmax. 
+    ####### min_x should be less that max_x, same for min_y versus max_y 
+    ##########################################################################
+    if min_x > max_x:
+        temp = max_x
+        max_x = min_x
+        min_x = temp
+        #print(min_x, max_x)
     
-    
+    if min_y > max_y:
+        temp = max_y
+        max_y = min_y
+        min_y = temp
+        #print(min_y, max_y)
+        
     new_line= ",".join([rot_name,fields[1],fields[2],fields[3],\
                         str(min_x), str(min_y), str(max_x), str(max_y)])
     print(new_line, "\n")
@@ -103,9 +122,12 @@ with open(data_set + filename, "r") as f:
             
         line = f.readline()
         
+        
+# Uncomment!        
 f2= open(data_set + filename_rot, "w") 
 f2.writelines(new_lines)
 f2.close()
+###################################################
             
             
             

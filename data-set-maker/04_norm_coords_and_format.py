@@ -5,7 +5,7 @@
 import re
 import os
 import random
-from shutil import copyfile
+from shutil import copyfile, rmtree
 
 # https://www.tensorflow.org/lite/tutorials/model_maker_object_detection
 # https://cloud.google.com/vision/automl/object-detection/docs/prepare
@@ -18,6 +18,14 @@ from shutil import copyfile
 
 src_folder = 'images-25-26-orange-white/train/'
 dest_folder= 'images-25-26-orange-white/test/'
+
+# Make sure that test files dir is empty to prevent leakage of 
+# training data to test data, i.e. test data must remain unseen
+# during training.
+try:
+    rmtree(dest_folder)
+except OSError as e:
+    print("Error: %s - %s." % (e.filename, e.strerror))
 
 if not os.path.exists(dest_folder):
     os.makedirs(dest_folder)
@@ -62,9 +70,9 @@ for ii in range (len(lines)):
       
     if (prev_image != curr_image):
         rand_num = random.random();
-        if (rand_num < 0.90):
+        if (rand_num < 0.80):
             dataset = "TRAIN"; 
-        elif (rand_num < 0.96):
+        elif (rand_num < 0.90):
             dataset = "VALIDATION"; 
         else:
             dataset = "TEST";
