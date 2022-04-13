@@ -187,10 +187,20 @@ def detect_objects(interpreter, image, threshold):
   interpreter.invoke()
 
   # Get all outputs from the model
-  boxes = get_output_tensor(interpreter, 0)
-  classes = get_output_tensor(interpreter, 1)
-  scores = get_output_tensor(interpreter, 2)
-  count = int(get_output_tensor(interpreter, 3))
+  # boxes = get_output_tensor(interpreter, 0)
+  # classes = get_output_tensor(interpreter, 1)
+  # scores = get_output_tensor(interpreter, 2)
+  # count = int(get_output_tensor(interpreter, 3))
+
+  ###################################################################
+  # Get all outputs from the model, 
+  # NOTE the indices might be different for a different model.tflite 
+  ## that's odd, but that was the fix
+  boxes = get_output_tensor(interpreter, 1)
+  classes = get_output_tensor(interpreter, 3)
+  scores = get_output_tensor(interpreter, 0)
+  count = int(get_output_tensor(interpreter, 2))
+  ###################################################################
 
   results = []
   for i in range(count):
