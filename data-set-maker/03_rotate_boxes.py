@@ -6,7 +6,7 @@ This is Step 3:
 rotated bounding boxes to coincide with rotated colony locations
 
 Step 4 will be to norm and format for tflite
-$ perl norm_coords_and_format.pl  > labels_normed.csv
+$ norm_coords_and_format.py  > train_labels-normed.csv
 
 """
 
