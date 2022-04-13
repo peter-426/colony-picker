@@ -97,6 +97,9 @@ def get_output_tensor(interpreter, index):
   return tensor
 
 
+# A high confidence threshold will prevent most overlaps, but not all.
+# boxes_overlap was designed to prevent the same colony from being detected more 
+# once.
 def boxes_overlap(ymin1, xmin1, ymax1, xmax1, ymin2, xmin2, ymax2, xmax2):
     
    # if (xmin1 == xmin2 or ymin1 == ymin2 or xmax1 == xmax2 or ymax1 == ymax2):
@@ -110,8 +113,26 @@ def boxes_overlap(ymin1, xmin1, ymax1, xmax1, ymin2, xmin2, ymax2, xmax2):
     # If one rectangle is above other
     if(ymax1 <= ymin2 or ymax2 <= ymin1):
         return False
+    
+    XA1=xmin1;  XA2=xmax1;   YA1=ymin1;   YA2=ymax2;
+    XB1=xmin2;  XB2=xmax2;   YB1=ymin2;   YB2=ymax2
+    
+    SA = (XA2 - XA1) * (YA2 - YA1)
+    SB = (XB2 - XB1) * (YB2 - YB1)
+    
+    SI = max(0, min(XA2, XB2) - max(XA1, XB1)) * max(0, min(YA2, YB2) - max(YA1, YB1))
+    if SA > SB:
+        pct_overlap = SI/SA
+    else:
+        pct_overlap = SI/SB
+        
+    if pct_overlap <= 0.10:
+        return False
+        
+    #print(f"The two bounding boxes overlap is {pct_overlap}")
  
     return True
+
 
 
 # Puts list of results in ascending order by score
