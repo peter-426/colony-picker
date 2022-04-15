@@ -55,7 +55,7 @@ def rot_row(line, rot_ext, angle):
       max_y= xmax
           
     ##########################################################################
-    ## The bounding box is defined by it's upper left and lower left
+    ## The bounding box is defined by its upper left and lower left
     ## coordinated where pt (0,0) is the upper left corner of an image.
     #
     ## Rotation will change the relative coordinates, e.g. after rotating  
