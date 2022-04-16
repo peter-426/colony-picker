@@ -14,10 +14,13 @@ Consequently, predictions can be tuned by confidence and the extent to which two
 <td><img src=car-white-GT.png  width=500 > <br>
 labelled by an expert, then rotated </td>	
 <td><img src=car-white-pred.png  width=500 > <br>
-predicted colonies </td>	
+predicted colonies, confidence >= 10% </td>	
 <tr>
 <td><img src=model_50_loss.png  width=500 > </td>	
-<td><img src=model_50_box.png  width=500 > </td>	
+<td><img src=model_50_box.png  width=500 > </td>
+<tr>
+<td><img src=model_50_det_loss.png  width=500 > </td>	
+<td><img src=model_50_cls_loss.png  width=500 > </td>		
 <tr>
 <td><img src=model_50_L2.png  width=500 > </td>	
 <td><img src=model_50_LR_GN.png  width=500 > </td>	
