@@ -1,6 +1,6 @@
 ## Results 
 
-#### Example training log
+<!-- #### Example training log -->
 
 <!-- <img src=5-epochs.png  width=800 > -->
 
