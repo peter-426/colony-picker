@@ -2,7 +2,7 @@
 
 #### Example training log
 
-<img src=5-epochs.png  width=800 > 
+<!-- <img src=5-epochs.png  width=800 > -->
 
 ### EfficientDet D1 Lite model predictions after being trained for 50 epochs.<br>
 This data was was split into training, validation, and test sets. Although the total number of predicted bounding boxes was very high in this case, many were filtered out.
