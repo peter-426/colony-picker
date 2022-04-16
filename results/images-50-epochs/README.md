@@ -11,26 +11,14 @@ Consequently, predictions can be tuned by confidence and the extent to which two
 
 <a href=https://www.youtube.com/channel/UCkWYMoMaR-2BUtU9O6clCAA > YouTube </a> <br>
 <table>
-<td><img src=test-image-0-50-epochs.png  width=500 > </td>
-<td><img src=test-image-1-50-epochs.png  width=500 > </td>
-<tr>
-<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
-<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
-<tr>
-<td><img src=car-white-GT.png  width=500 > </td>	
-<td><img src=car-white-pred.png  width=500 > </td>	
+<td><img src=car-white-GT.png  width=500 > label by expert </td>	
+<td><img src=car-white-pred.png  width=500 > predicted </td>	
 <tr>
 <td><img src=model_50_loss.png  width=500 > </td>	
 <td><img src=model_50_box.png  width=500 > </td>	
 <tr>
-<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
-<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
-<tr>
-<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
-<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
-<tr>
-<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
-<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
+<td><img src=model_50_L2.png  width=500 > </td>	
+<td><img src=model_50_LR_GN.png  width=500 > </td>	
 </table>
 
 
