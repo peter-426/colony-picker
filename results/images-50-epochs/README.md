@@ -16,6 +16,21 @@ Consequently, predictions can be tuned by confidence and the extent to which two
 <tr>
 <td><img src=test-image-2-50-epochs.png  width=500 > </td>	
 <td><img src=test-image-3-50-epochs.png  width=500 > </td>	
+<tr>
+<td><img src=car-white-GT.png  width=500 > </td>	
+<td><img src=car-white-pred.png  width=500 > </td>	
+<tr>
+<td><img src=model_50_loss.png  width=500 > </td>	
+<td><img src=model_50_box.png  width=500 > </td>	
+<tr>
+<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
+<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
+<tr>
+<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
+<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
+<tr>
+<td><img src=test-image-2-50-epochs.png  width=500 > </td>	
+<td><img src=test-image-3-50-epochs.png  width=500 > </td>	
 </table>
 
 

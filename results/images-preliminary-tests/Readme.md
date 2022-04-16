@@ -20,8 +20,5 @@ The main thing to notice from this preliminary test run is that after some train
 <td><img src=2-thresh=0.10.png  width=500 > T=0.10 </td>	
 <tr>
 <td><img src=434.jpg  width=500 > </td>	
-<td><img src=434-thresh=0.10.png  width=500 > T=0.10 </td>	
-<tr>
-<td><img src=carotene-01-600-600.jpg  width=500 > </td>	
-<td><img src=carotene-01-600-600-thresh=0.25.png  width=500 > T=0.25</td>	
+<td><img src=434-thresh=0.10.png  width=500 > T=0.10 </td>		
 </table>
