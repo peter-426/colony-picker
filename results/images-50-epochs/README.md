@@ -12,7 +12,7 @@ Consequently, predictions can be tuned by confidence and the extent to which two
 <a href=https://www.youtube.com/channel/UCkWYMoMaR-2BUtU9O6clCAA > YouTube </a> <br>
 <table>
 <td><img src=car-white-GT.png  width=500 > labelled by an expert, then rotated </td>	
-<td><img src=car-white-pred.png  width=505 > predicted colonies </td>	
+<td><img src=car-white-pred.png  width=500 > predicted colonies </td>	
 <tr>
 <td><img src=model_50_loss.png  width=500 > </td>	
 <td><img src=model_50_box.png  width=500 > </td>	
