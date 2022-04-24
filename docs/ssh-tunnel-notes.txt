@@ -1,0 +1,30 @@
+
+If the R Pi is behind a gateway, can use an ssh tunnel if no VPN available.
+
+ssh -F config pi@w7980.see.ed.ac.uk  # to see vnc server port
+
+On R Pi
+netstat -na | grep vnc
+---------
+unix  2      [ ACC ]     STREAM     LISTENING     16278    /tmp/.vnc-vncservice/vncserver-x11.CtrlComms
+unix  2      [ ]         DGRAM                    18137    /tmp/.vncserver-license/0.500
+
+------------
+
+## might have to chnage vnc server
+sudo vncpasswd -service   # only root can set this and make changes to vnc server
+
+sudo nano /root/.vnc/config.d/vncserver-x11   # might have to add line for authorization
+
+sudo systemctl restart vncserver=X11-serviced  # did not work, so reboot
+
+reboot
+
+ssh -F config pi@w7980.see.ed.ac.uk  # to see new vnc server port, then exit and make ssh tunnel
+
+## now ready to use remote desktop as usual
+
+ssh -F config -L 18142:localhost:5900 w7980.see.ed.ac.uk # makes ssh tunnel
+
+On local PC, use Remmina: localhost:16278 # should see the R pi desktop, depends on tunnel
+
